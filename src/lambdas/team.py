@@ -1,6 +1,6 @@
 """ Python Lambdas """
 
-players =  [
+players =  [ # For, 5th June 2019
     "Shikhar Dhawan", # Open
     "Rohit Sharma", # Open
     "Virat Kohli", # 3
@@ -13,5 +13,14 @@ players =  [
     "Mohammed Shami", # 10
     "Jasprit Bumrah", # 11
 ]
+
+""" Maps """
 team = list(map(lambda player: player.upper(), players))
-print( team ) # For, 5th June 2019
+# or, [player.upper() for player in players]
+print("\nAll Team Members with uppercase: ", team)
+
+""" Filter """
+# or, [player for player in players if player[0].lower() == "v"]
+players_with_v = list(filter(lambda player: player[0].lower() == "v" , players))
+print("\nAll Team Members with v as first_letter: ", players_with_v)
+
