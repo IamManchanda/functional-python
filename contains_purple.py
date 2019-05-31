@@ -6,4 +6,3 @@ def contains_purple(*args):
 
 print( contains_purple(25, "purple") )
 print( contains_purple(25, "red", "green", "blue") )
-
